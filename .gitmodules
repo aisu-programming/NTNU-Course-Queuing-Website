@@ -1,0 +1,6 @@
+[submodule "Back-End"]
+	path = Back-End
+	url = https://github.com/aisu-programming/NTNU-Course-Queuing-Website-BackEnd.git
+[submodule "Front-End"]
+	path = Front-End
+	url = https://github.com/aisu-programming/NTNU-Course-Queuing-Website-FrontEnd.git
