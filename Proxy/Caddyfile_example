@@ -1,0 +1,25 @@
+https://YOUR_DOMAIN {
+	
+	tls FULL_CHAIN.PEM PRIVATE_KEY.PEM
+
+	route /api* {
+		uri strip_prefix /api
+		reverse_proxy https://BACK_END_URL:PORT {
+			header_up X-Forwarded-For {remote_host}
+			transport http {
+				tls
+				tls_insecure_skip_verify
+			}
+		}
+	}
+
+	route {
+		reverse_proxy * https://FRONT_END_URL:PORT {
+			header_up X-Forwarded-For {remote_host}
+			transport http {
+				tls
+				tls_insecure_skip_verify
+			}
+		}
+	}
+}
