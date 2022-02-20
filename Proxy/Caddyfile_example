@@ -4,7 +4,7 @@ https://YOUR_DOMAIN {
 
 	route /api* {
 		uri strip_prefix /api
-		reverse_proxy https://BACK_END_URL:PORT {
+		reverse_proxy https://BACK_END_URL:BACK_END_PORT {
 			header_up X-Forwarded-For {remote_host}
 			transport http {
 				tls
@@ -14,7 +14,7 @@ https://YOUR_DOMAIN {
 	}
 
 	route {
-		reverse_proxy * https://FRONT_END_URL:PORT {
+		reverse_proxy * https://FRONT_END_URL:FRONT_END_PORT {
 			header_up X-Forwarded-For {remote_host}
 			transport http {
 				tls
