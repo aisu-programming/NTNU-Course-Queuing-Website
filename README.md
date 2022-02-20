@@ -22,20 +22,25 @@ In the end, I tried Caddy... And I found that it is super fast and easy to confi
 
    I bought one on NameCheap with about 2 USD (about 60 TWD), which is "ntnu.site".
 
-3. Caddy
+3. Caddy (Reverse proxy)
 
    1. Download [Caddy](https://github.com/caddyserver/caddy/releases/download/v2.4.6/caddy_2.4.6_windows_amd64.zip).
    2. You can choose to add its path into environment variables, or put the whole directory here.
+
       I'm not going to explain this in detail because it is tedious and a little complicated.
+
       Here's a tutorial for you guys: https://wst24365888.github.io/install-caddy/
    3. Rename `Caddyfile_example` in directory `Proxy` to `Caddyfile`.
    4. Open it and do some changes:
+
       1. Change "YOUR_DOMAIN" in line 1 to your domain.
       2. Change "FULL_CHAIN.PEM" in line 3 to your full chain certificate filename. Default should be "fullchain1.pem".
       3. Change "PRIVATE_KEY.PEM" in line 3 to your private key certificate filename. Default should be "privkey1.pem".
       4. Change "BACK_END_URL" to your Back-End URL.
-         Most of the people setup Back-End on the same computer with this proxy program, then the Back-End URL should be "127.0.0.1".
+
+         Most of the people setup Back-End on the same computer with reverse proxy, then the Back-End URL should be "127.0.0.1".
       5. Do same thing to "FRONT_END_URL"
       6. Change "BACK_END_PORT" to your Back-End port. Default should be 5000.
       7. Change "FRONT_END_PORT" to your Front-End port. Default should be 3000.
-   3. Run the Caddy with command `caddy run` or `caddy start`.
+
+   5. Run the Caddy with command `caddy run` or `caddy start`.
