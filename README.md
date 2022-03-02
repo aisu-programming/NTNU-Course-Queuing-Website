@@ -1,6 +1,10 @@
 # NTNU-Course-Queuing-Website
 NTNU Course Queuing Website / 師大課程排隊網站
 
+![image](https://user-images.githubusercontent.com/66176726/155833713-bda110dc-5cb7-4ad4-a89c-c13edfde0c7e.png)
+
+![image](https://user-images.githubusercontent.com/66176726/155833731-ead14ef4-c0b4-48e0-b1b3-b6b10acd4f20.png)
+
 ## Tutorial of network management ([Reverse proxy](https://zh.wikipedia.org/wiki/%E5%8F%8D%E5%90%91%E4%BB%A3%E7%90%86))
 
 I used Apache at the beginning, but it is extremely slow.
