@@ -1,6 +1,8 @@
 # NTNU-Course-Queuing-Website
 NTNU Course Queuing Website / 師大課程排隊網站
 
+:film_strip: [Video demonstration](https://drive.google.com/file/d/1kD20a2p87bEUbMNY-0_bzJAPP7JunoJ5/view?usp=sharing)
+
 ![image](https://user-images.githubusercontent.com/66176726/155833713-bda110dc-5cb7-4ad4-a89c-c13edfde0c7e.png)
 
 ![image](https://user-images.githubusercontent.com/66176726/155833731-ead14ef4-c0b4-48e0-b1b3-b6b10acd4f20.png)
